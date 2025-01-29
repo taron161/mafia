@@ -7,5 +7,5 @@ btn.addEventListener('click', () => {
   const gamePanel = document.querySelector('[data-game]');
 
   ui.style.display = 'none';
-  gamePanel.style.display = 'block';
+  gamePanel.style.display = 'grid';
 });
