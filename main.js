@@ -36,8 +36,19 @@ btn.addEventListener('click', () => {
   players = gamePanel.querySelectorAll('.player-item');
 
   players.forEach((player) => {
+    let count  = 0;
     player.addEventListener('click', () => {
-      player.style.backgroundColor = 'tomato';
+      
+      if (count === 0) {
+        count ++;
+        player.style.backgroundColor = 'tomato';
+      } else if (count === 1) {
+        count ++;
+        player.style.backgroundColor = 'blue';
+      } else {
+        count = 0;
+        player.style.backgroundColor = 'white';
+      }
     });
   });
 });
