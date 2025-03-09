@@ -8,9 +8,9 @@
 
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 1024px;
   min-width: 320px;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 0 15px;
 }
 
@@ -165,13 +165,63 @@ button,
 .game-container {
   display: none;
   width: 100%;
-  height: 800px;
+  height: auto;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
   background-color: #ff9900;
   margin: auto;
-  border-radius: 40px;
+  border-radius: 10px;
+  padding: 10px;
 
   grid-template-columns: repeat(2, 50%);
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  border: solid 2px tomato;
+  padding: 5px;
+}
+
+.player p {
+  min-width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.player p span {
+  font-weight: 700;
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+.player__teamates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100%;
+}
+
+.player__teamates button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
 }
